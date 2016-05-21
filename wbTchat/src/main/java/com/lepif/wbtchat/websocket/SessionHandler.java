@@ -34,6 +34,7 @@ public class SessionHandler {
     public void addSession(Session session) {
         sessions.add(session);
         
+        //Non Utilisé...................
         for(Object user: users){
             JsonObject addUser = createAddUser((User)user);
             sendToSession(session, addUser);
